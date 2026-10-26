@@ -8,7 +8,6 @@ A transparent, topmost indicator for **AI requirement understanding**. A fresh r
 
 ## Visual guide
 
-Startup: no invented AI name or task number, no stale score.
 
 <img src="docs/images/startup-none.png" width="390" alt="Unnamed startup indicator showing None">
 
