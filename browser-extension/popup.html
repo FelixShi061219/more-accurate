@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>More Accurate</title>
+<link rel="stylesheet" href="popup.css">
+<main><h1>More Accurate</h1>
+<p id="status" role="status">None</p>
+<label><input type="checkbox" id="enabled">启用网页联动 / Enable</label>
+<label><input type="checkbox" id="inject" checked>附加评分指令 / Add instruction</label>
+<p class="help">指令会随你的问题发送给当前 AI，评分标记会出现在回复中。仅标记传给本机浮窗；没有评分就显示 None。</p>
+<p class="help">Instructions are sent with your question. Only AI score markers reach the local indicator. Missing reports remain None.</p>
+<button id="retry">重新连接 / Retry</button>
+<p class="help">首次使用：运行项目里的 install-browser-bridge.ps1，在 Edge / Chrome 扩展管理中加载本文件夹，再刷新 AI 网页。</p>
+</main><script src="popup.js"></script></html>

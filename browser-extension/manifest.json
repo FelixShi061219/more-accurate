@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "More Accurate",
+  "version": "1.2.0",
+  "description": "Local AI understanding indicator. Opt-in scoring instructions; no external server.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlMyB4aLtBp8l9jdeR1YSP8avgc/FElUFjJKEkltvp80NjMVah+WrzD8miQEm0ArB8tnI9Gx8J5mLc8oEh2JMHmZD49sJUFVw7dF4WIqdmTw8onXnbZhBHacz++ZSGNJe6HFXKETdHMc77jyUl9rrZYb1nYWs/09koj7YHd9mGHdCqNHzVqIvH+GlPX5OA//h1X5YjCjmtjxf7FEawhkJycjs3HFPIeczZSFB015w1J0XZoZ1CeuWTS61Rj5hL9GB2CHETiAuxlWm5Aa71U/dD02J8bp33PD396VX2mA/RVwNi86YYJzAHR2xEo/c/3p4CbOadfjjCos9eCXRRKfZawIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*",
+    "https://chat.deepseek.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://chat.deepseek.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "path":  "C:\\Users\\felix\\Desktop\\more accurate-skill\\app\\MoreAccurateIndicator.exe",
+    "description":  "More Accurate local indicator bridge",
+    "name":  "com.moreaccurate.indicator",
+    "allowed_origins":  [
+                            "chrome-extension://hpojjollcpdcgfmpdnmlollgojpdgaon/"
+                        ],
+    "type":  "stdio"
+}
