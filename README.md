@@ -4,7 +4,7 @@ English · [简体中文](README.zh-CN.md) · Windows 10/11 · 1.2.0
 
 <img src="app/icons/app.png" width="80" alt="More Accurate icon">
 
-A transparent, topmost indicator for **AI requirement understanding**. Each startup resets the previous selection and shows an unnamed `None` bar. A fresh report or new connection can show the first task; historical tasks stay in the task selector until you select them. During that run you can manually select up to four. Double-click separate bars to combine them into contiguous equal sectors of one water-level ball. Scores are AI self-reports, not answer-correctness probabilities.
+A transparent, topmost indicator for **AI requirement understanding**. A fresh report or new connection can show the first task; historical tasks stay in the task selector until you select them. During that run you can manually select up to four. Double-click separate bars to combine them into contiguous equal sectors of one water-level ball. Scores are AI self-reports, not answer-correctness probabilities.
 
 ## Visual guide
 
